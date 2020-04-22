@@ -1,4 +1,7 @@
 package com.example.mitral.ui.main;
 
-public class MainActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
+
 }
