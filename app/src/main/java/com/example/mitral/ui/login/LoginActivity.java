@@ -5,6 +5,7 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -23,8 +24,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.mitral.R;
-import com.example.mitral.ui.login.LoginViewModel;
-import com.example.mitral.ui.login.LoginViewModelFactory;
+import com.example.mitral.ui.main.MainActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -115,6 +115,9 @@ public class LoginActivity extends AppCompatActivity {
                 loadingProgressBar.setVisibility(View.VISIBLE);
                 loginViewModel.login(usernameEditText.getText().toString(),
                         passwordEditText.getText().toString());
+                    System.out.println("Button Clicked");
+                    Intent goToMain = new Intent(getApplicationContext(), MainActivity.class);
+                    startActivity(goToMain);
 
             }
         });

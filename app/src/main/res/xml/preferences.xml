@@ -1,0 +1,32 @@
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <PreferenceCategory
+        android:summary="Username and password information"
+
+        android:title="Login information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditTextPreference
+            android:key="username"
+            android:summary="Please enter your login username"
+            android:title="Username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditTextPreference
+            android:key="password"
+            android:summary="Enter your password"
+            android:title="Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </PreferenceCategory>
+    <androidx.preference.SwitchPreference
+        android:defaultValue="true"
+        android:key="example_switch"
+        android:summary="Turn this option on or off"
+        android:title="Settings option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</PreferenceScreen>
