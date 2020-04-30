@@ -1,0 +1,66 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <PreferenceCategory
+        android:summary="Username and password information"
+        android:title="Login information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditTextPreference
+            android:key="email_preference"
+            android:summary="Edit your email"
+            android:title="Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:useSimpleSummaryProvider="true"
+            />
+        <EditTextPreference
+            android:key="password_preference"
+            android:summary="Enter your password"
+            android:title="Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:useSimpleSummaryProvider="true"
+            />
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:summary="Basic information"
+        android:title="Basic information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditTextPreference
+            android:key="age_preference"
+            android:summary="Enter Age"
+            android:title="Age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:useSimpleSummaryProvider="true"
+            />
+        <EditTextPreference
+            android:key="mobilenumber_preference"
+            android:summary="Enter Mobile Number"
+            android:title="Mobile number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:useSimpleSummaryProvider="true"
+            />
+        <DropDownPreference
+            android:key="gender_preference"
+
+            android:title="Gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="1"
+            android:entries="@array/listArray"
+            android:entryValues="@array/listValues"
+            />
+    </PreferenceCategory>
+
+
+
+
+
+</PreferenceScreen>
